@@ -1,0 +1,118 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6rem;
+  padding: 0.5rem;
+  will-change: filter;
+  &:hover {
+    filter: drop-shadow(0 0 2rem #646cffaa);
+  }
+  &.logo_javascript {
+    &:hover {
+      filter: drop-shadow(0 0 2rem #f7df1eaa);
+    }
+  }
+  &.logo_jquery {
+    &:hover {
+      filter: drop-shadow(0 0 2rem #7afff4aa);
+    }
+  }
+  &.logo_sass {
+    &:hover {
+      filter: drop-shadow(0 0 2rem #faaefcaa);
+    }
+  }
+}
+
+.card {
+  padding: 2rem;
+  .counter_value {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 8px #f44;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  &:hover {
+    border-color: #646cff;
+  }
+  &:focus, &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+  .card {
+    .counter_value {
+      text-shadow: 0px 0px 8px rgb(144, 144, 144);
+    }
+  }
+}
